@@ -9,7 +9,6 @@ import { CalendarIcon, Search, Train } from "lucide-react";
 import { format } from "date-fns";
 import { cn } from "@/lib/utils";
 import Navigation from "@/components/Navigation";
-import Footer from "@/components/Footer";
 import { useToast } from "@/hooks/use-toast";
 
 const SearchTrains = () => {
@@ -25,10 +24,10 @@ const SearchTrains = () => {
   };
 
   return (
-    <div className="min-h-screen flex flex-col bg-background">
+    <div className="min-h-screen bg-background">
       <Navigation />
       
-      <main className="flex-1 container mx-auto px-4 py-8">
+      <main className="container mx-auto px-4 py-8">
         <div className="max-w-3xl mx-auto">
           {/* Header */}
           <div className="text-center mb-8">
@@ -160,8 +159,6 @@ const SearchTrains = () => {
           </div>
         </div>
       </main>
-
-      <Footer />
     </div>
   );
 };

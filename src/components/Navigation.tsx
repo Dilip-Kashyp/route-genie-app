@@ -8,9 +8,9 @@ const Navigation = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navLinks = [
-    { path: "/", label: "Home" },
     { path: "/plan", label: "Plan Trip" },
     { path: "/search-trains", label: "Train Search" },
+    { path: "/ai-assistant", label: "AI Assistant" },
   ];
 
   const isActive = (path: string) => location.pathname === path;
